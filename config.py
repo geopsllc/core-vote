@@ -7,8 +7,8 @@ max_share = 99
 min_time = 1
 max_time = 24
 
-# Reward gain to trigger a recommendation, in number of coins
-gain = 0.1
+# Minimum total rewards gain to trigger action, in number of coins
+gain = 1
 
 # Dictionary of addresses and their names in the format 'name':'address'
 addresses = {

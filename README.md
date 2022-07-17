@@ -6,6 +6,7 @@ Basic install:
 ```sh
 git clone https://github.com/geopsllc/core-vote
 cd core-vote
+bash install.sh
 nano config.py
 ```
 - change config.py to your liking
@@ -24,6 +25,11 @@ This is a Multi-Address Vote Monitoring Tool for Core Networks.
 - You can use it in cli mode or bring up a web interface that refreshes every minute.
 
 ## Changelog
+
+### 0.2
+
+- logic rewrite to consider total rewards instead of per-address rewards
+- added async logic to speed up api queries
 
 ### 0.1
 
