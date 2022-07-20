@@ -129,6 +129,8 @@ def address_reward(name):
                     elif temp_name != name and class_dict[temp_name].voted_name not in {class_dict[name].voted_name, 'N/A'}:
                         temp_rank = sorted_votes.index(delegate_votes_temp[class_dict[temp_name].voted_name])+1
                         if temp_rank != current_ranks_temp[temp_name]:
+                            if temp_rank > int(active_delegates):
+                                current_rewards_temp[temp_name] = 0
                             current_ranks_temp[temp_name] = temp_rank
 
                 temp_total = round(sum(current_rewards_temp.values()), 3)
